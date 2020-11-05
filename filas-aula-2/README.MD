@@ -23,7 +23,7 @@
 ![](ConnectionError.png)
 
 ### InvalidCoupon
-![](/InvalidCoupon.png)
+![](InvalidCoupon.png)
 
 ### ValidCoupon
-![](/ValidCoupon.png)
+![](ValidCoupon.png)
