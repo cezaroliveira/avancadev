@@ -20,10 +20,10 @@
 ## Evidências
 
 ### ConnectionError
-![ConnectionError](/ConnectionError.png)
+![](ConnectionError.png)
 
 ### InvalidCoupon
-![InvalidCoupon](/InvalidCoupon.png)
+![](/InvalidCoupon.png)
 
 ### ValidCoupon
-![ValidCoupon](/ValidCoupon.png)
+![](/ValidCoupon.png)
