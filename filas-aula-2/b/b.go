@@ -2,14 +2,15 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/joho/godotenv"
-	uuid "github.com/satori/go.uuid"
-	"github.com/streadway/amqp"
-	"github.com/wesleywillians/go-rabbitmq/queue"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
+
+	"github.com/joho/godotenv"
+	uuid "github.com/satori/go.uuid"
+	"github.com/streadway/amqp"
+	"github.com/wesleywillians/go-rabbitmq/queue"
 )
 
 type Result struct {
@@ -58,7 +59,7 @@ func process(msg amqp.Delivery) {
 	order := NewOrder()
 	json.Unmarshal(msg.Body, &order)
 
-	resultCoupon := makeHttpCall("http://localhost:9092", order.Coupon)
+	resultCoupon := makeHttpCall("http://microservice-c:9092", order.Coupon)
 
 	switch resultCoupon.Status {
 	case InvalidCoupon:
